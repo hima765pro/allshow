@@ -1,13 +1,16 @@
-<!doctype html>
-<html lang="ko">
- <head>
-  <meta charset="UTF-8">
-  <title>2022 All(A!! BRCA Lynparza Live) Show</title>
- </head>
- <body>
-  <a href="javascript:void(0);" id="btn" >카카오 링크보내기</a>
-  <!-- Kakao API -->
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong></p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
   <script>
     Kakao.init('87f3722dc2c3899d598ed946442e0e4a'); //6번 항목에서 발급 받았던 javascript key를 여기에 넣는다.
  
